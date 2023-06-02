@@ -1,0 +1,17 @@
+@import '../variables.scss';
+
+.button {
+    border: 1px solid black;
+    padding: 0 10px;
+    border-radius: 10px;
+
+    &.active:hover {
+        cursor: pointer;
+        background-color: lightgrey;
+    }
+
+    &.disabled {
+        border-color: lightgrey;
+        color: lightgrey;
+    }
+}
