@@ -1,0 +1,24 @@
+@import '../variables.scss';
+
+.team {
+    border: 1px solid black;
+    margin-bottom: 5px;
+
+    &.available:hover {
+        cursor: pointer;
+        background-color: lightgray;
+    }
+
+    &.selected {
+        opacity: 0.5;
+    }
+
+    &.notSelected {
+        background-color: yellow;
+
+        & > .team_flags > img:hover {
+            cursor: pointer;
+            transform: scale(1.5);
+        }
+    }
+}
