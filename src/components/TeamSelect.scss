@@ -1,10 +1,21 @@
 @import '../variables.scss';
 
 .teamSelect {
+    border: $containerBorder;
+    padding: $containerPadding;
+    border-radius: $containerBorderRadius;
+    background-color: $containerBackgroundColor;
 
     &_input {
         display: flex;
         flex-direction: column;
+        gap: $inputGap;
+        margin: $inputGap 0;
+
+        & input {
+            font-size: 1rem;
+            border-radius: 0.5rem;
+        }
     }
 
     &_submit {

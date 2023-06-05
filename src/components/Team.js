@@ -1,6 +1,6 @@
 import './Team.scss'
 
-const Team = ({ team, teams, setTeams, selectedTeam, setSelectedTeam }) => {
+const Team = ({ team, teams, setTeams, selectedTeam, setSelectedTeam, displayScore }) => {
 
     const handleFlagClick = (i) => {
         const newSelectedTeam = {teamName: selectedTeam.teamName, flags: selectedTeam.flags.concat([team.flags[i]])}
@@ -20,7 +20,7 @@ const Team = ({ team, teams, setTeams, selectedTeam, setSelectedTeam }) => {
     }
 
     return (
-        <div className={`team ${selectedTeam ? (selectedTeam.teamName === team.teamName ? "selected" : "notSelected") : "available"}`} onClick={() => !selectedTeam ? setSelectedTeam(team) : null}>
+        <div className={`team ${selectedTeam ? (selectedTeam.teamName === team.teamName ? "selected" : "notSelected") : "available"}`} onClick={() => !selectedTeam && !displayScore ? setSelectedTeam(team) : null}>
             <div className="team_name">{team.teamName}</div>
             <div className="team_flags">
                 {

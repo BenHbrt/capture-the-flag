@@ -6,5 +6,9 @@ export const demoTeams = [
     {
         teamName: "Team Dog",
         flags: ["pink", "orange", "darkblue", "white", "green", "yellow", "lightblue", "lightblue", "darkblue", "yellow", "green", "pink", "orange", "white"]
+    },
+    {
+        teamName: "Team Hamster",
+        flags: ["pink", "orange", "darkblue", "white", "green", "yellow", "lightblue", "lightblue", "darkblue", "yellow", "green", "pink", "orange", "white"]
     }
 ]

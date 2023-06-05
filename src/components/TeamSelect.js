@@ -44,7 +44,7 @@ const TeamSelect = ({ setTeams }) => {
                 <div className={`${teamsLength > 1 ? "hidden" : ""}`}>You need to enter at least 2 teams names to play.</div>
                 <Button text={"Enter"} func={buttonFunc} active={teamsLength > 1} />
             </div>
-            <button onClick={() => console.log(teamsArray)}>Teams</button>
+            {/* <button onClick={() => console.log(teamsArray)}>Teams</button> */}
         </div>
     )
 }

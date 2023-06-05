@@ -1,12 +1,17 @@
 import './Game.scss';
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 import Team from './Team';
+import Button from './Button';
 
-const Game = ({ teams, setTeams }) => {
+const Game = ({ teams, setTeams, setDisplayScore }) => {
 
     const [selectedTeam, setSelectedTeam] = useState(null)
+
+    const scoreFunc = () => {
+        setDisplayScore(true)
+    }
 
     return (
         <div className="game">
@@ -18,7 +23,8 @@ const Game = ({ teams, setTeams }) => {
                     return <Team team={team} selectedTeam={selectedTeam} setSelectedTeam={setSelectedTeam} teams={teams} setTeams={setTeams} key={i} />
                 })
             }
-        <button onClick={() => console.log(selectedTeam)}>SelectedTeam</button>
+            <Button text={"Check Scores"} active={true} func={scoreFunc} />
+        {/* <button onClick={() => console.log(selectedTeam)}>SelectedTeam</button> */}
         </div>
     )
 }
