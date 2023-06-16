@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/capture-the-flag/static/css/main.24e6a912.css",
+    "main.js": "/capture-the-flag/static/js/main.516e8b7b.js",
+    "index.html": "/capture-the-flag/index.html",
+    "main.24e6a912.css.map": "/capture-the-flag/static/css/main.24e6a912.css.map",
+    "main.516e8b7b.js.map": "/capture-the-flag/static/js/main.516e8b7b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.24e6a912.css",
+    "static/js/main.516e8b7b.js"
+  ]
+}
