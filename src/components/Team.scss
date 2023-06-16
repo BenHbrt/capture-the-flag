@@ -1,8 +1,24 @@
 @import '../variables.scss';
 
+@keyframes flash {
+    0% {background-color: transparent;}
+    50% {background-color: lightgray;}
+    100% {background-color: transparent;}
+}
+
 .team {
-    border: 1px solid black;
-    margin-bottom: 5px;
+    // border: 1px solid black;
+    margin-bottom: 10px;
+    padding: 5px;
+    box-shadow: 2px 2px 2px 2px lightgrey;
+    border-radius: 5px;
+    width: 675px;
+
+    &_flags {
+        display: flex;
+        gap: $inputGap;
+        flex-wrap: wrap;
+    }
 
     &.available:hover {
         cursor: pointer;
@@ -14,11 +30,15 @@
     }
 
     &.notSelected {
-        background-color: yellow;
+        animation: flash 1s linear infinite;
+
+        & > .team_flags > img {
+            transition: 0.5s;
+        }
 
         & > .team_flags > img:hover {
             cursor: pointer;
-            transform: scale(1.5);
+            transform: scale(1.5) rotateZ(5deg);
         }
     }
 }

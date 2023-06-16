@@ -22,7 +22,7 @@ function App() {
         {!displayScore && teams ? <Game teams={teams} setTeams={setTeams} setDisplayScore={setDisplayScore} /> : null}
         {displayScore ? <Scores teams={teams} displayScore={displayScore} /> : null}
       </div>
-      <button onClick={() => console.table(teams)}>TeamsObj</button>
+      {/* <button onClick={() => console.table(teams)}>TeamsObj</button> */}
     </div>
   );
 }

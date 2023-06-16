@@ -1,2 +1,11 @@
 @import '../variables.scss';
 
+.game {
+
+    &_teams {
+        display: flex;
+        width: calc((675px * 2) + 10px);
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
